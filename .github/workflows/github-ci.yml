@@ -12,9 +12,9 @@ jobs:
     # This step checks out a copy of your repository.
     - name: Checkout repository
       uses: actions/checkout@v3
-      with:
-        repository: tonasodji/test_pull_request_fork_2
-    - name: Compile
+      #with:
+        #repository: tonasodji/test_pull_request_fork_2
+    - name: run
       run: |
         #rm 
         git clone https://github.com/tonasodji/pvs.git
