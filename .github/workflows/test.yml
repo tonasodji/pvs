@@ -11,8 +11,8 @@ jobs:
     # This step checks out a copy of your repository.
     - name: Checkout repository
       uses: actions/checkout@v2
-      #with:
-        #repository: tonasodji/test_pull_request_fork_2
+      with:
+        repository: tonasodji/pull_request_fork
         
     - name: info  
       run: |
