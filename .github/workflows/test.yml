@@ -3,6 +3,7 @@ name: "Analyze"
 
 on:
   workflow_call:
+  pull_request:
 
 jobs:
   Analyze:
