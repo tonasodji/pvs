@@ -11,14 +11,13 @@ jobs:
     # This step checks out a copy of your repository.
     - name: Checkout repository
       uses: actions/checkout@v2
-      with:
-        repository: tonasodji/pull_request_fork
         
     - name: info  
       run: |
         echo $GITHUB_REPOSITORY
         echo $GITHUB_EVENT_NAME
         echo $GITHUB_BASE_REF
+        
     - name: Analyze
       run: |
         git clone https://github.com/tonasodji/pvs.git
